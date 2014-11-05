@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.directinfo.fikiface"
+    version   = "1.1.8">
+
+    <name>Fikiface</name>
+
+    <description>
+        Dating Application
+    </description>
+
+    <author href="http://www.directinfo.hu" email="host@directinfo.hu">
+        Col-Directinfo Kft.
+    </author>
+
+    <content src="index.html" />
+
+    <!-- If you do not want any permissions to be added to your app, add the following tag to your config.xml; you will still have the INTERNET permission on your app, which PhoneGap requires. 
+    <preference name="permissions" value="none"/> -->
+
+    <!-- Multi-Platform -->
+    <!-- Currently supported versions are 2.5.0, 2.7.0, 2.9.0, and 3.1.0 (default) all versions prior to 2.5.0 have been deprecated. If you don't specify a version in your config, it will be set to the current default version. Your app will not build if you specify an unsupported version number.  -->
+    <preference name="phonegap-version" value="3.6.3" />
+
+    <!-- Device orientation; possible values are default, landscape, or portrait. Please note that default means both landscape and portrait are enabled. If you want to use each platform's default settings (usually portrait only), remove this tag from your config.xml file.  -->
+    <preference name="orientation" value="portrait" />
+
+    <!-- Makes your app full screen, with values true or false. This hides the status bar at the top, and is false by default.  -->
+    <preference name="fullscreen" value="false" />
+
+    <!-- iOS Only -->
+
+    <!-- For targeting a specific device; possible values are handset, tablet, or universal. Note that this currently only applies to iOS builds; by default all builds are universal. -->
+    <preference name="target-device" value="universal" />
+
+    <!-- This will cause iOS to not apply its gloss to the app's icon on the user's home screen; possible values are true or false, default is false.  -->
+    <preference name="prerendered-icon" value="true" />
+
+    <!-- Set the iOS status bar style with values default, black-opaque or black-translucent. The default is a grey status bar, black-opaque will appear black. Although black-translucent is supported, the PhoneGap webview does not extend beneath the status bar, so it will appear identical to black-opaque once your app is running.  -->
+    <preference name="ios-statusbarstyle" value="black-translucent" />
+
+    <!-- Controls whether certain data types (such as phone numbers and dates) are automatically turned into links by the system. Defaults to "true" (as does the system web view). In preference to this, try using meta-tags: And use detect-data-types if meta tags don't work for you.  -->
+    <preference name="detect-data-types" value="false" />
+
+    <!-- If set to true, app will terminate when suspended, for example when home button is pressed; default is false.  -->
+    <preference name="exit-on-suspend" value="false" />
+
+    <!-- This sets the IPHONEOS_DEPLOYMENT_TARGET in the build, which tranlsates to the MinimumOSVersion in the ipa Propertly List.  -->
+    <preference name="deployment-target" value="6.0" />
+
+    <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="webviewbounce" value="false" />
+
+    <!-- ios: if set to false the spinner won't appear on the splash screen during app loading -->
+    <preference name="show-splash-screen-spinner" value="false" />
+
+    <!-- ios: if set to false the splash screen must be hidden using a JavaScript API -->           
+    <preference name="auto-hide-splash-screen" value="false" />
+
+    <!-- Android Only -->
+    <!-- Minimum Android SDK version. Corresponds to the usesSdk attributes in the AndroidManifest.xml file - more details are in [the Android documentation](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html). Defaults to 7 (Android 2.1).  -->
+    <preference name="android-minSdkVersion" value="7" />
+
+    <!-- Corresponds to the usesSdk attributes in the AndroidManifest.xml file an integer designating the API Level that the application targets. If not set, the default value equals that given to minSdkVersion. More details are in [the Android documentation](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#target). Unset by default.  -->
+    <preference name="android-targetSdkVersion" value="15" />
+
+    <!-- Maximum Android SDK version. Corresponds to the usesSdk attributes in the AndroidManifest.xml file - more details are in [the Android documentation](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html). Unset by default.  -->
+    <preference name="android-maxSdkVersion" value="19" />
+
+    <!-- Where an app can be installed - defaults to internalOnly (as the Android SDK). auto or preferExternal allow the app to be installed on an SD card - this can lead to unexpected behavior. More details available in [the Android documentation](http://developer.android.com/guide/appendix/install-location.html).  -->
+    <preference name="android-installLocation" value="preferExternal" />
+
+    <!-- How the main window of the activity interacts with the window containing the on-screen soft keyboard. More details, and possible values, available in [the Android documentation](http://developer.android.com/guide/topics/manifest/activity-element.html#wsoft).  value="stateVisible|adjustResize" -->
+    <preference name="android-windowSoftInputMode" value="adjustResize" />
+
+    <!-- Duration that the splash screen remains visible; defaults to 5000 (ms). For auto-hide behaviour call navigator.splashscreen.hide() in the deviceready callback. -->
+    <preference name="SplashScreenDelay" value="10000" />
+
+    <!-- Display a native loading dialog when loading the app. Format for the value is "Title, Message" -->
+    <preference name="loadingDialog" value="Fikiface, The Application is loading!" />
+
+    <!-- Plugins -->
+    <!-- Core plugins -->
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+
+    <!-- <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.network-information" />
+    <gap:plugin name="org.apache.cordova.vibration" /> -->
+
+    <!-- Third party plugins -->
+    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+    <gap:plugin name="de.appplant.cordova.plugin.background-mode" />
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.8.0">
+        <param name="APP_ID" value="896138900403620" />
+        <param name="APP_NAME" value="fikiface" />
+    </gap:plugin>
+
+    <!-- Define app icons for each platform. -->
+    <icon src="icon.png" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <!-- <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" />
+    <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/> -->
+    <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="res/icon/webos/icon-64.png"          gap:platform="webos" />
+    <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
+    <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" gap:density="ldpi"/>
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" gap:density="mdpi"/>
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" gap:density="hdpi"/>
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" gap:density="xhdpi"/>
+    <!-- <gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" /> -->
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
+
+    <!-- iOS8 Geolocation FIX -->
+    <gap:config-file platform="ios" parent="NSLocationAlwaysUsageDescription" overwrite="false"> 
+        <array> 
+            <string>Allow GPS</string> 
+        </array> 
+    </gap:config-file>
+
+    <!--
+        Define access to external domains.
+
+        <access />            - a blank access tag denies access to all external resources.
+        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+
+        Otherwise you can specify specific domains: 
+    -->
+    <access origin="*"/>
+    <!--
+        <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
+        <access origin="http://phonegap.com" subdomains="true" />  - same as above but including subdomains such as http://build.phonegap.com/
+        <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
+    -->
+
+</widget>
