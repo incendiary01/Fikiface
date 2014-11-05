@@ -1,1 +1,0 @@
-["function _93bb7371052e38980c0f03c9c57e5e394a38411c",50,714720,"var a=function(b){alert(\"UserInfo: \"+JSON.stringify(b))};facebookConnectPlugin.login([\"public_profile\"],a,function(b){alert(\"\"+b)",751598,38,"FavoredUsers",641232,43,720841,81257]
