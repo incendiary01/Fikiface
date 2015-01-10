@@ -1,0 +1,1 @@
+["function _8c0fc33d4f7f67af660c4a370e0b9933e5568ec2",50,716424,"s){if(s===\"Ok\"){cordova.exec(p,q",716532,37,";function p(v){alert(v)}function q(v){alert(v)}}else{",759471,39,"user\"));var u={user_id:r",716638,148,"t",712799,33,";t.setData(u);t.setParams(u);t.load(",702832,38,716894,128108]
