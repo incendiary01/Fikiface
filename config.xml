@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.directinfo.fikiface"
-    version   = "2.1.1">
+    version   = "2.1.2">
 
     <name>Fikiface</name>
 
@@ -89,6 +89,8 @@
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
+
+    <gap:plugin name="net.tunts.webintent" version="0.2.1" />
 
     <!-- <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.media-capture" />
