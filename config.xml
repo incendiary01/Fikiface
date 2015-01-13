@@ -81,6 +81,9 @@
 
     <!-- Display a native loading dialog when loading the app. Format for the value is "Title, Message" -->
     <preference name="loadingDialog" value="Fikiface, The Application is loading!" />
+    
+    <!-- [iOS] Add ability to choose where to backup app data in config.xml -->
+    <preference name="BackupWebStorage" value="none" />
 
     <!-- Plugins -->
     <!-- Core plugins -->
