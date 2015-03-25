@@ -112,7 +112,7 @@
     <gap:plugin name="de.appplant.cordova.plugin.background-mode" />
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
 
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.8.0">
+    <gap:plugin name="com.phonegap.plugins.facebookconnect">
         <param name="APP_ID" value="896138900403620" />
         <param name="APP_NAME" value="fikiface" />
     </gap:plugin>
