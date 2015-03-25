@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.directinfo.fikiface"
-    version   = "2.1.2">
+    version   = "2.1.3">
 
     <name>Fikiface</name>
 
@@ -81,6 +81,9 @@
 
     <!-- Display a native loading dialog when loading the app. Format for the value is "Title, Message" -->
     <preference name="loadingDialog" value="Fikiface, The Application is loading!" />
+    
+    <!-- [iOS] Add ability to choose where to backup app data in config.xml -->
+    <preference name="BackupWebStorage" value="none" />
 
     <!-- Plugins -->
     <!-- Core plugins -->
@@ -89,8 +92,6 @@
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
-
-    <gap:plugin name="net.tunts.webintent" version="0.2.1" />
 
     <!-- <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.media-capture" />
