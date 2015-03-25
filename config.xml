@@ -68,7 +68,7 @@
     <preference name="android-targetSdkVersion" value="15" />
 
     <!-- Maximum Android SDK version. Corresponds to the usesSdk attributes in the AndroidManifest.xml file - more details are in [the Android documentation](http://developer.android.com/guide/topics/manifest/uses-sdk-element.html). Unset by default.  -->
-    <preference name="android-maxSdkVersion" value="19" />
+    <!-- <preference name="android-maxSdkVersion" value="19" /> -->
 
     <!-- Where an app can be installed - defaults to internalOnly (as the Android SDK). auto or preferExternal allow the app to be installed on an SD card - this can lead to unexpected behavior. More details available in [the Android documentation](http://developer.android.com/guide/appendix/install-location.html).  -->
     <preference name="android-installLocation" value="preferExternal" />
