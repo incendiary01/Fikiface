@@ -23,7 +23,7 @@
 
     <!-- Multi-Platform -->
     <!-- Currently supported versions are 2.5.0, 2.7.0, 2.9.0, and 3.1.0 (default) all versions prior to 2.5.0 have been deprecated. If you don't specify a version in your config, it will be set to the current default version. Your app will not build if you specify an unsupported version number.  -->
-    <preference name="phonegap-version" value="3.6.3" />
+    <preference name="phonegap-version" value="3.7.0" />
 
     <!-- Device orientation; possible values are default, landscape, or portrait. Please note that default means both landscape and portrait are enabled. If you want to use each platform's default settings (usually portrait only), remove this tag from your config.xml file.  -->
     <preference name="orientation" value="portrait" />
